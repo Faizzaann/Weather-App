@@ -1,76 +1,69 @@
-# 📘 WeatherApp – Documentation
+📘 WeatherApp – Documentation
+This folder contains all documentation related to the Planning & Requirements Phase of the WeatherApp project. It outlines functional and non-functional requirements, user stories, AI tool usage, project planning, and effort estimation.
 
-This folder contains all documentation related to the **Planning & Requirements Phase** of the WeatherApp project. It outlines functional and non-functional requirements, user stories, AI tool usage, and planning insights.
+🧠 AI & Project Management Tools Used in Planning Phase
+Tool	Purpose
+ChatGPT	Generated functional/non-functional requirements, drafted user stories, assisted with role/task planning.
+GitHub Projects	Kanban board with "To Do", "In Progress", "Done" columns for SDLC tracking.
+Jira (Effort Estimation Focus)	Used to assign story points, prioritize tasks, and estimate team effort.
+Asana (Alternative)	Can be used for teams preferring task lists over boards.
+Figma	Designing UI wireframes (in progress).
 
----
+✅ Functional Requirements
+Users can search weather by entering a city name.
 
-## 🧠 AI Tools Used in Planning Phase
+Users can get weather based on current geolocation.
 
-### 1. **ChatGPT**
-- Helped generate functional and non-functional requirements.
-- Drafted user stories based on common weather app features.
-- Assisted in identifying roles and dividing tasks.
+Display weather details: temperature, humidity, pressure, wind speed.
 
-### 2. **GitHub Projects**
-- Used to create a Kanban board with phases: To Do, In Progress, Done.
-- Tasks and milestones added for SDLC tracking and assignment.
+Provide 5-day forecast with visual breakdowns.
 
-### 3. **Jira/Asana** (Optional Alternative)
-- Can be used for estimating effort using story points and visualizing progress.
+UI must be responsive for both desktop and mobile.
 
----
+⚙️ Non-Functional Requirements
+Response time under 2 seconds.
 
-## ✅ Functional Requirements
+Handle at least 500 concurrent users.
 
-1. Users can search weather by entering a city name.
-2. Users can get weather based on current location (Geolocation).
-3. Displays current temperature, humidity, pressure, wind speed, etc.
-4. Shows 5-day weather forecast with icons and daily breakdown.
-5. Responsive UI design for mobile and desktop screens.
+Ensure 99.9% uptime.
 
----
+Use accurate weather data via OpenWeatherMap API.
 
-## ⚙️ Non-Functional Requirements
+Cross-browser compatibility with modern browsers.
 
-1. App should respond in under 2 seconds.
-2. Should handle at least 500 concurrent users.
-3. System availability must be 99.9% uptime.
-4. Should provide accurate data via OpenWeatherMap API.
-5. Should be compatible with latest versions of major browsers.
+🧾 User Stories with Jira Estimations
+ID	As a...	I want to...	So that...	Story Points	Priority
+US1	Visitor	Search weather by city	I can know the weather elsewhere	3 SP	High
+US2	Traveler	Get weather based on my location	I can prepare for local weather	5 SP	High
+US3	General user	View a 5-day forecast	I can plan upcoming days	5 SP	Medium
+US4	Mobile user	Access the app on mobile devices	I can use it on the go	2 SP	High
+US5	Developer	Easily deploy and maintain the app	I can ensure uptime and fixes	8 SP	Medium
 
----
+📌 Story Points were estimated using Jira Planning Poker, based on team consensus during sprint planning.
 
-## 🧾 User Stories
+🧭 Project Timeline & Milestones
+Phase	Task	Tool(s) Used	Status
+Planning	Requirement gathering	ChatGPT	✅ Complete
+Planning	User stories & effort estimation	ChatGPT, Jira	✅ Complete
+Design	Wireframes, UI layout	Figma	⏳ In Progress
+Development	Core coding & AI pair programming	DeepSeek, VS Code	⏳ In Progress
+Testing	Test script generation	Testim, Applitools	🔜 Upcoming
+Deployment	CI/CD & monitoring setup	GitHub Actions, Datadog	🔜 Upcoming
 
-| ID  | As a...          | I want to...                                 | So that...                                      |
-|-----|------------------|----------------------------------------------|-------------------------------------------------|
-| US1 | Visitor          | Search weather by city                       | I can know the weather conditions elsewhere     |
-| US2 | Traveler         | Get weather based on my current location     | I can prepare for local weather                 |
-| US3 | General user     | View a 5-day forecast                        | I can plan for upcoming days                    |
-| US4 | Mobile user      | View weather on mobile                       | I can access it on the go                       |
-| US5 | Developer        | Easily deploy and maintain the app           | I can ensure continuous availability and updates|
+📊 Why Jira for Story Points?
+📈 Visual sprint boards with burndown charts.
 
----
+⏳ Estimation using Agile story points (1–13 scale).
 
-## 🧭 Project Timeline & Milestones
+🤝 Collaborative Planning Poker feature.
 
-| Phase       | Task                                   | AI Tool                 | Status       
-|-------------|----------------------------------------|-------------------------|-----------------|
-| Planning    | Requirement gathering                  | ChatGPT                 | ✅ Complete    |
-| Planning    | User stories & effort estimation       | ChatGPT, Jira           | ✅ Complete    |
-| Design      | Wireframes, UI layout                  | Figma                   | ⏳ In Progress |
-| Development | Code with AI suggestions               | Deepseek                | ⏳ In Progress |
-| Testing     | Test script generation                 | Testim, Applitools      | 🔜 Upcoming    |
-| Deployment  | CI/CD pipeline + monitoring setup      | GitHub Actions, Datadog | 🔜 Upcoming    |
+📅 Helps define clear sprint goals and developer workload balance.
 
----
+🧩 Notes & Insights
+ChatGPT accelerated requirements drafting and saved hours during planning.
 
-## 🧩 Notes & Insights
+Story points made task complexity more transparent in Jira's sprint board.
 
-- AI tools significantly reduced manual effort in drafting requirements and stories.
-- Using GitHub Projects helped us visualize our SDLC stages and track progress.
-- AI-generated user stories were refined through team discussion and approval.
+AI tools improved initial effort breakdown, but team discussion refined final estimations.
 
----
-
-
+Using GitHub Projects alongside Jira gave both technical and management clarity.
