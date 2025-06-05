@@ -21,6 +21,16 @@ The Weather App is a responsive web application that provides real-time weather 
 
 ## 📁 Project Structure
 
+📦 WeatherApp/
+├── docs/              # Requirements, user stories, insights
+├── design/            # Wireframes, diagrams
+├── src/
+│   ├── frontend/      # HTML, CSS, JS files
+│   └── backend/       # PHP, Web APIs
+├── tests/             # Test cases (manual or automated)
+├── deployment/        # GitHub Actions workflows, deployment scripts
+└── README.md          # Project overview + AI tool usage
+
 
 ---
 
