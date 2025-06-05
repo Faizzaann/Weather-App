@@ -1,90 +1,86 @@
 # 🎨 WeatherApp – Design Documentation
 
-This folder includes all design-related elements of the WeatherApp project. The design phase was heavily supported using DeepSeek AI, which helped us generate UI layouts, system diagrams, and architecture decisions efficiently.
+This folder contains the UI design, wireframes, and architecture diagrams for the WeatherApp project. All designs were created using **Figma**.
 
 ---
 
-## 🧠 AI Tool Used: DeepSeek
+## 🛠️ Design Tool Used: Figma
 
-- DeepSeek was used to:
-  - Generate responsive frontend layouts using HTML, CSS, Bootstrap inside `index.php`.
-  - Create backend PHP code for API requests, weather data processing, and database interaction.
-  - Suggest modular design structure for PHP files.
-  - Create flowcharts and system architecture designs.
+- Figma was used to:
+  - Create responsive UI wireframes for the weather app
+  - Design system architecture diagrams
+  - Visualize the frontend-backend interaction
+  - Create data flow diagrams for better understanding of communication
 
 ---
 
 ## 🖼️ UI Wireframe Overview
 
-> Designed and suggested by **DeepSeek**
+> Created in Figma to visualize the layout of the application interface.
 
-- **Single-page layout using `index.php`**:
-  - Search box for entering city name
-  - Weather display card (city, temperature, humidity, icons)
-  - Forecast section (e.g., 3-day view or hourly)
-  - Responsive UI using Bootstrap grid
+- **Main Components**:
+  - Search bar to enter city name
+  - Weather info card showing city, temperature, humidity, icon
+  - Forecast section (e.g., 3-day weather)
+  - Responsive layout using Bootstrap grid
 
-📁 *Include Screenshots:*
-- `/design/wireframes/ui-wireframe.png`
-- `/design/wireframes/mobile-view.png`
+📁 *Figma Files/Screenshots:*
+- `/design/wireframes/main-ui-wireframe.png`
+- `/design/wireframes/mobile-ui-wireframe.png`
 
 ---
 
-## 🧱 System Architecture (PHP + Web API)
+## 🧱 System Architecture Diagram
 
-> Diagram generated with DeepSeek & refined manually
+> Designed in Figma to show how the components interact within the system.
 
-### Components:
+### Key Components:
 
-- **Frontend (`index.php`)**:
-  - Combines HTML, CSS, JS, and Bootstrap
-  - Sends AJAX request to backend PHP API
+- **Frontend (`index.php`)**
+  - User interface built with HTML, CSS, Bootstrap, and JS
+  - Sends AJAX requests to backend PHP API
 
-- **Backend (PHP APIs)**:
-  - Receives request from frontend
-  - Fetches data from OpenWeatherMap API
-  - Stores/query data in MySQL via XAMPP
-  - Sends response as JSON back to frontend
+- **Backend (PHP APIs)**
+  - Receives requests and fetches data from a weather API
+  - Processes and returns results in JSON
+  - Stores data in MySQL via XAMPP if needed
 
-- **Database (XAMPP - MySQL)**:
-  - Stores location history, cache data, or search logs
+- **Database (MySQL using XAMPP)**
+  - Stores user queries, cached weather info, etc.
 
-📁 *Include Diagrams:*
+📁 *Diagram Screenshots:*
 - `/design/diagrams/system-architecture.png`
-- `/design/diagrams/frontend-backend-flow.png`
+- `/design/diagrams/frontend-backend-communication.png`
 
 ---
 
 ## 🔄 Data Flow Diagram
 
-1. User enters city name in `index.php`.
-2. JavaScript sends an AJAX request to backend PHP API.
-3. PHP backend fetches weather data from external Web API.
-4. PHP optionally logs or stores data in MySQL DB.
-5. Response is returned to frontend in JSON format.
-6. JavaScript displays weather data dynamically in UI.
+1. User inputs city name in the frontend.
+2. JavaScript sends an AJAX call to the backend API.
+3. PHP backend fetches data from external weather API.
+4. Backend processes and sends JSON response.
+5. JavaScript updates the UI dynamically with results.
 
 📁 *Include Screenshot:*
 - `/design/diagrams/data-flow.png`
 
 ---
 
-## 📁 Included Files in `/design/`
+## 📁 Folder Contents
 
-| File Path                              | Description                            |
-|----------------------------------------|----------------------------------------|
-| wireframes/ui-wireframe.png            | Frontend layout wireframe              |
-| wireframes/mobile-view.png             | Mobile view of weather display         |
-| diagrams/system-architecture.png       | System architecture (PHP + Web API)    |
-| diagrams/frontend-backend-flow.png     | Flow between frontend and backend      |
-| diagrams/data-flow.png                 | Data flow from input to display        |
+| File Path                                   | Description                                 |
+|---------------------------------------------|---------------------------------------------|
+| wireframes/main-ui-wireframe.png            | Main screen layout for desktop              |
+| wireframes/mobile-ui-wireframe.png          | Mobile screen layout                        |
+| diagrams/system-architecture.png            | Backend and frontend interaction overview   |
+| diagrams/frontend-backend-communication.png | Request/response flow between PHP and JS    |
+| diagrams/data-flow.png                      | End-to-end data processing flow             |
 
 ---
 
-## 📌 Notes
+## 🔎 Summary
 
-- PHP backend ensures safe handling of API keys and database interactions.
-- AJAX is used in frontend to ensure smooth user experience without page reloads.
-- DeepSeek improved the design accuracy and reduced manual effort significantly.
-
-
+- All design assets were created with Figma to streamline visualization and communication.
+- Wireframes helped in planning a responsive and user-friendly layout.
+- System and data flow diagrams guided the implementation of backend and frontend logic.
