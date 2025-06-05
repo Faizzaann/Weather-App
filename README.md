@@ -12,10 +12,13 @@ The Weather App is a responsive web application that provides real-time weather 
 | SDLC Phase               | AI Tool(s) Used                              | Purpose                                                   |
 |--------------------------|----------------------------------------------|-----------------------------------------------------------|
 | Planning & Requirements  | ChatGPT, GitHub Projects                     | Generate requirements, user stories, estimations          |
-| Design                   | Figma AI, Lucidchart AI                      | Create UI wireframes and system diagrams                  |
-| Development              | GitHub Copilot                               | Code generation and refactoring                           |
+| Design                   | Figma                                        | Create UI wireframes and system diagrams                  |
+| Development              | DeepSeek, GitHub Copilot                     | Generate frontend/backend code and APIs                   |
 | Testing                  | Testim, Applitools                           | Automate test cases and UI testing                        |
-| Deployment & Maintenance | GitHub Actions (CI/CD), Datadog (monitoring) | Automate deployment pipeline and app health monitoring    |
+| Deployment               | DeepSeek, GitHub, XAMPP                      | Automate deployment with PHP APIs and local server setup  |
+| Monitoring               | PHP Logs, Browser Dev Tools, DeepSeek        | Monitor API errors, performance, and system behavior      |
+| Maintenance              | DeepSeek, Manual Checks                      | Update APIs/UI, fix bugs, ensure long-term functionality  |
+
 
 ---
 
