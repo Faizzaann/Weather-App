@@ -58,8 +58,8 @@ This folder contains all documentation related to the **Planning & Requirements 
 |-------------|----------------------------------------|-------------------------|-----------------|
 | Planning    | Requirement gathering                  | ChatGPT                 | ✅ Complete    |
 | Planning    | User stories & effort estimation       | ChatGPT, Jira           | ✅ Complete    |
-| Design      | Wireframes, UI layout                  | Deepseek                | ⏳ In Progress |
-| Development | Code with AI suggestions               | GitHub Copilot          | ⏳ In Progress |
+| Design      | Wireframes, UI layout                  | Figma                   | ⏳ In Progress |
+| Development | Code with AI suggestions               | Deepseek                | ⏳ In Progress |
 | Testing     | Test script generation                 | Testim, Applitools      | 🔜 Upcoming    |
 | Deployment  | CI/CD pipeline + monitoring setup      | GitHub Actions, Datadog | 🔜 Upcoming    |
 
