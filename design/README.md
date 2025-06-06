@@ -1,86 +1,58 @@
-# 🎨 WeatherApp – Design Documentation
+# 🎨 Design Overview
 
-This folder contains the UI design, wireframes, and architecture diagrams for the WeatherApp project. All designs were created using **Figma**.
-
----
-
-## 🛠️ Design Tool Used: Figma
-
-- Figma was used to:
-  - Create responsive UI wireframes for the weather app
-  - Design system architecture diagrams
-  - Visualize the frontend-backend interaction
-  - Create data flow diagrams for better understanding of communication
+This directory contains all design-related documentation and diagrams for the Weather App project. It covers both user interface layout planning and system architecture visualization.
 
 ---
 
-## 🖼️ UI Wireframe Overview
+## 🛠 Tools Used
 
-> Created in Figma to visualize the layout of the application interface.
+- **Figma**: Used to draw UI wireframes and system architecture diagrams.
+- **ChatGPT**: Assisted in planning layout structure and technical design.
+- **Figma AI**: Helped in generating responsive components and refining visual structure.
 
-- **Main Components**:
-  - Search bar to enter city name
-  - Weather info card showing city, temperature, humidity, icon
-  - Forecast section (e.g., 3-day weather)
-  - Responsive layout using Bootstrap grid
+---
 
-📁 *Figma Files/Screenshots:*
-- `/design/wireframes/main-ui-wireframe.png`
-- `/design/wireframes/mobile-ui-wireframe.png`
+## 🖼️ UI Wireframe Diagram
+
+### Purpose:
+To provide a visual blueprint of the app’s user interface across devices (desktop and mobile).
+
+### Components Included:
+- **Search Bar** – for users to enter city names.
+- **Weather Information Card** – displays city, temperature, humidity, and weather icon.
+- **Forecast Section** – shows a multi-day (e.g., 3-day or 5-day) weather forecast.
+- **Responsive Layout** – built using Bootstrap grid concepts to adapt to different screen sizes.
+
+This wireframe helps align development with user expectations and ensures a clean, functional layout before coding begins.
 
 ---
 
 ## 🧱 System Architecture Diagram
 
-> Designed in Figma to show how the components interact within the system.
+### Purpose:
+To illustrate how frontend, backend, API, and database components interact within the Weather App system.
 
-### Key Components:
+### Key Layers:
+- **Frontend (HTML, CSS, JS, Bootstrap)**:
+  - User interface is rendered in `index.php`.
+  - Uses AJAX to send city/location input to backend.
 
-- **Frontend (`index.php`)**
-  - User interface built with HTML, CSS, Bootstrap, and JS
-  - Sends AJAX requests to backend PHP API
+- **Backend (PHP APIs)**:
+  - Accepts requests, queries external weather API.
+  - Returns formatted JSON data.
+  - Optionally saves data to a local MySQL database.
 
-- **Backend (PHP APIs)**
-  - Receives requests and fetches data from a weather API
-  - Processes and returns results in JSON
-  - Stores data in MySQL via XAMPP if needed
+- **Database (MySQL via XAMPP)**:
+  - Used for storing user queries or caching frequent API responses.
 
-- **Database (MySQL using XAMPP)**
-  - Stores user queries, cached weather info, etc.
-
-📁 *Diagram Screenshots:*
-- `/design/diagrams/system-architecture.png`
-- `/design/diagrams/frontend-backend-communication.png`
-
----
-
-## 🔄 Data Flow Diagram
-
-1. User inputs city name in the frontend.
-2. JavaScript sends an AJAX call to the backend API.
-3. PHP backend fetches data from external weather API.
-4. Backend processes and sends JSON response.
-5. JavaScript updates the UI dynamically with results.
-
-📁 *Include Screenshot:*
-- `/design/diagrams/data-flow.png`
+- **Data Flow**:
+  - Frontend ↔ Backend (PHP) ↔ Weather API & MySQL Database
 
 ---
 
-## 📁 Folder Contents
+## 📁 Design Deliverables
 
-| File Path                                   | Description                                 |
-|---------------------------------------------|---------------------------------------------|
-| wireframes/main-ui-wireframe.png            | Main screen layout for desktop              |
-| wireframes/mobile-ui-wireframe.png          | Mobile screen layout                        |
-| diagrams/system-architecture.png            | Backend and frontend interaction overview   |
-| diagrams/frontend-backend-communication.png | Request/response flow between PHP and JS    |
-| diagrams/data-flow.png                      | End-to-end data processing flow             |
-
----
-
-## 🔎 Summary
-
-- All design assets were created with Figma to streamline visualization and communication.
-- Wireframes helped in planning a responsive and user-friendly layout.
-- System and data flow diagrams guided the implementation of backend and frontend logic.
+- UI Wireframe Diagram (desktop and mobile layouts)
+- System Architecture Diagram
+- Frontend-Backend Communication Diagram
+- Design Notes explaining layout decisions and component flow
