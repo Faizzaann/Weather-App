@@ -75,21 +75,24 @@ describe('Weather App - Special Characters Handling', () => {
         expect(await weatherResult.getText()).toContain('São Paulo');
     });
 });
+```
 
 ### Unit Test Example: `getWeather.php`
 
 function testGetWeatherNoCity() {
-  $_GET['city'] = '';
-  ob_start();
-  include '../api/getWeather.php';
-  $output = ob_get_clean();
-  $response = json_decode($output, true);
-  assert($response['status'] === 'error');
+    $_GET['city'] = '';
+    ob_start();
+    include '../api/getWeather.php';
+    $output = ob_get_clean();
+    $response = json_decode($output, true);
+    assert($response['status'] === 'error');
 }
+```
 
-### #End-to-End Test Example:
 
-function testEndToEndValidCitySearch() {
+#### End-to-End Test Example: 'index.php'
+
+ function testEndToEndValidCitySearch() {
   $city = 'London';
   $response = file_get_contents("http://localhost/weather-app/api/getWeather.php?city=$city");
   $data = json_decode($response, true);
