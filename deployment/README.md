@@ -65,7 +65,7 @@ Example: http://localhost/weather-app/backend/getWeather.php?city=London
 
 Access Frontend
 
-Open http://localhost/weather-app/ in your browser.
+Open http://localhost/Weather-App/index.php in your browser.
 
 Ensure the weather information is fetched and displayed.
 
