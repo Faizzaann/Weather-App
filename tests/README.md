@@ -65,6 +65,7 @@ This directory contains the testing strategy, test cases, and execution guide fo
 ## 📝 Example Test Scripts
 
 describe('Weather App - Special Characters Handling', () => {
+
     it('should handle city names with special characters', async () => {
         await browser.url('http://yourappurl/index.php');
         await $('#cityInput').setValue('São Paulo');
@@ -76,6 +77,7 @@ describe('Weather App - Special Characters Handling', () => {
 });
 
 ### Unit Test Example: `getWeather.php`
+
 function testGetWeatherNoCity() {
   $_GET['city'] = '';
   ob_start();
@@ -86,6 +88,7 @@ function testGetWeatherNoCity() {
 }
 
 ### #End-to-End Test Example:
+
 function testEndToEndValidCitySearch() {
   $city = 'London';
   $response = file_get_contents("http://localhost/weather-app/api/getWeather.php?city=$city");
