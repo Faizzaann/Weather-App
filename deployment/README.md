@@ -61,7 +61,7 @@ Verify API Endpoints
 
 Test APIs in Postman or browser:
 
-Example: http://localhost/weather-app/backend/getWeather.php?city=London
+Example: http://localhost/Weather-App/getWeather.php?city=London
 
 Access Frontend
 
